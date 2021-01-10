@@ -1,0 +1,132 @@
+* { /*Selector universal: Reinicia los estilos del HTML*/ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado-red { /*Clase*/
+    color: red;
+}
+
+.paragraph {
+    /* margin-top: 10px; */
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.6; 
+    text-decoration: line-through;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-indent: 2em;
+}
+
+h1, h2, h3, h4 {
+    font-size: 20px;
+}
+
+.encabezado-blue {
+    color: royalblue;
+}
+
+/* p a img { En Cascada
+    width: 100%;
+} */
+
+p a .img-100 { /*En cascada*/
+    width: 100%;   
+}
+
+.encabezado-red, .img-100 {
+    height: 100%;
+}
+
+.img-100 { 
+    width: 100%;
+}
+
+
+.header { 
+    background-color: yellow;
+}
+
+header nav a { 
+    text-decoration: none;
+    font-family: 'New Rocker', cursive;
+    font-size: 20px;
+    color: yellowgreen;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.navbar {
+    text-align: center; /*Para alinear bloque*/
+}
+
+.navbar a:hover { /*Pseudoclase,Pseudoelemento*/
+    background-color: aquamarine;
+    color: blue;
+}
+
+
+.new-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: salmon;
+    background-color: springgreen;
+}
+
+
+.section-container {
+    /* color: #5995da; colores claros */
+    background-color: #d6d6d6;
+    display: flex;
+    justify-content:center;
+}
+
+.section {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*Para mover los elementos verticalmente*/
+}
+
+.foto-grid-container {
+    display: flex;
+    justify-content: center;
+    background-color: #b2d6ff;
+    /* float: left; Permite envolver otro elemento */
+}
+
+.foto-grid {
+display: flex;
+justify-content: center;
+flex-wrap: wrap; /*Los elementos fuera de pantalla se acomoden automaticamente*/
+}
+
+.contacto {
+    height: 200px;
+    background-color: #f5cf8e;
+}
+
+.item-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.item-logo {
+    position: absolute;
+    left: 150px;
+    transform: translate(-150px, 300px);
+    transition: 1s linear all;
+}
+
+.item-social {
+    position: absolute;
+    right: 200px;
+    transform:scale(2);
+}
+
+
+
